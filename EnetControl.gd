@@ -23,7 +23,6 @@ func _on_host_pressed():
 func _on_join_pressed():
 	peer = ENetMultiplayerPeer.new()
 	peer.create_client(address, port)
-	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
 	multiplayer.set_multiplayer_peer(peer)
 	
 	start_game()
