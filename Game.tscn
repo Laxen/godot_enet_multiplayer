@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://brdmddjoab53c"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_db141"]
+[ext_resource type="PackedScene" uid="uid://bsr11gis8s3ha" path="res://Player.tscn" id="1_orhff"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_db141")
+player_scene = ExtResource("1_orhff")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-46, -54, 83, -48, 93, 59, -68, 90)
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp5rkveua7ttd"]
+
+[ext_resource type="PackedScene" uid="uid://06vj7o3xy8o3" path="res://EnetControl.tscn" id="1_eqrof"]
+
+[node name="Main" type="Node2D"]
+
+[node name="EnetControl" parent="." instance=ExtResource("1_eqrof")]
