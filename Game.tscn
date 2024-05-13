@@ -13,7 +13,7 @@ polygon = PackedVector2Array(-46, -54, 83, -48, 93, 59, -68, 90)
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://Player.tscn")
+_spawnable_scenes = PackedStringArray("res://Player.tscn", "res://Bullet.tscn")
 spawn_path = NodePath("../SpawnRoot")
 
 [node name="SpawnRoot" type="Node2D" parent="."]
