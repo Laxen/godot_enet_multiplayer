@@ -1,12 +1,14 @@
 extends Control
 
+@export var game_scene : PackedScene
+
 var address = "127.0.0.1"
 var port = 8910
 var max_players = 2
 var peer
 
 func start_game():
-	var scene = load("res://Game.tscn").instantiate()
+	var scene = game_scene.instantiate()
 	get_tree().root.add_child(scene)
 	self.hide()
 
